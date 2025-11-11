@@ -1,0 +1,25 @@
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-svg {
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+  filter: drop-shadow(0 2px 4px rgba(0, 212, 255, 0.3));
+}
+
+.logo-text {
+  color: var(--text-primary);
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  white-space: nowrap;
+}
+
+/* Remove gradient on hover for better visibility */
+.logo-container:hover .logo-svg {
+  transform: scale(1.05);
+  filter: drop-shadow(0 2px 8px rgba(0, 212, 255, 0.5));
+}
+
